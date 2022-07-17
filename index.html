@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link href="DynamicDrop.css" rel="stylesheet">
+    <link rel="Lens icon" href="Images/ty.png">
+    <title>Lenskart</title>
+    <script src="DynamicDrop.js"></script>
+</head>
+
+<body>
+    <header>  
+        <section>
+            <div class="topnavbar">
+                <ul>
+                    <li>
+                        <a href="Lenslist.html" target = "_blank" >List Page |</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lenskart.com/compare-looks"> Try In 3D | </a>
+                    </li>
+                    <li>
+                        <a href="https://stores.lenskart.com/">Store Locator |</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lenskart.com/covid-advisory-cms/">Quality |</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://lenskart.us/?utm_source=lenskart&utm_medium=india&utm_campaign=website/">USA |</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://lenskart.sg/?utm_source=lenskart&utm_medium=india&utm_campaign=website">Singapore |</a>
+                    </li>
+                    <li>
+                        <a href="https://lenskart.ae/?utm_source=lenskart&utm_medium=india&utm_campaign=website">UAE |</a>
+                    </li>
+                    <li>
+                        <a href="https://www.johnjacobseyewear.com/">John Jacobs |</a>
+                    </li>
+                    <li>
+                        <a href="https://aqualens.in/">Aqualens |</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lenskart.com/cobrowsing">Cobrowsing |</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.lenskart.com/?gi=f049efa3044a">Engineering Blog </a>
+                    </li>
+                    <li class="topright">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Main Header Section -->
+        <section>
+            <!-- Main Header Div -->
+            <div class="mainheader">
+                <!-- Lenskart Logo  -->
+                <div class="lenskartlogo">
+                    <a href="https://www.lenskart.com/">
+                        <img src="Images/d3.jpeg" alt="Lenskart Logo">
+                    </a>
+                </div>
+                <!-- Phone Number -->
+                <div class="phonenumber">
+                    <img src="Images/d4.jpeg" alt="phone_number">
+                </div>
+                <!-- Search Box -->
+                <div class="searchbox">
+                    <input class="search" type="search" name="search" id="search"
+                        placeholder= "  What  Are  You  Looking  For ? ">
+                    </input>
+                </div>
+                <!-- Main Header Menus -->
+                <div class="menu">
+                        <span class="menu-li">
+                            <a href="https://www.lenskart.com/?type=login">Track Order</a>
+                        </span>
+                        <span class="menu-li">
+                            <a href="https://www.lenskart.com/">Sign In & Sign Up</a>
+                        </span>
+                        <span class="menu-li"> 
+                            <a href="#"> <img height="15px"  src="Images/heart.png" alt="Whishlist"> Whishlist</a>
+                        </span>
+                        <span class="menu-li">
+                            <img height="15px" src="Images/cart.png" alt="cart">
+                            <a href="#">Cart</a>
+                        </span>
+                </div>
+            </div>
+        </section>
+        <!-- Bottom Header Section -->
+        <section>
+            <div class="bottomheader">
+                <div class="bottomheader1">
+                        <span class="li-hover">
+                            <a href="#">EYEGLASSES</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">COMPUTER GLASSES</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">KIDS GLASSES</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">CONTACT LENSES</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">SUNGLASSES</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">HOME EYE-TEST</a>
+                        </span>
+                        <span class="td li-hover">
+                            <a href="#">STORE LOCATOR</a>
+                        </span>
+                </div>
+
+<!--Geolocation-->
+                <div class="geo">
+                    <img src="Images/locate.png" alt="Location" >
+                    <span id="location"></span>
+                    <img src="Images/sun.png" alt="Weather" >
+                    <span id="weather"></span>
+                
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- COUPON
+    <div id="coupon" class="coupon">
+        <img src="Images/cop1.webp" alt="coupon" />
+        <span onclick="closeCoupon()" class="close-coupon">&times;</span>
+    </div> -->
+
+    <main>
+        <section>
+            <div class="row-1">
+
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/eyeglasses.html">
+                        <img class="miniicon" src="Images/k1.jpeg" alt="eyeglasses">
+                        <div class="widget-title">Eyeglasses</div>
+                    </a>
+                </div>
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/sunglasses.html">
+                        <img class="miniicon" src="Images/k2.jpeg" alt="sunglasses">
+                        <div class="widget-title">Sunglasses</div>
+                    </a>
+                </div>
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html">
+                        <img class="miniicon" src="Images/k3.jpeg" alt="computerglasses">
+                        <div class="widget-title">Computer Glasses</div>
+                    </a>
+                </div>
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/contact-lenses.html">
+                        <img class="miniicon" src="Images/k4.jpeg" alt="contactlenses">
+                        <div class="widget-title">Contact Lenses</div>
+                    </a>
+                </div>
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/power-sunglasses-main.html">
+                        <img class="miniicon" src="Images/k5.jpeg" alt="powersunglasses">
+                        <div class="widget-title">Power Sunglasses</div>
+                    </a>
+                </div>
+                <div class="td-11">
+                    <a href="https://www.lenskart.com/eyeglasses/collections/reading-eyeglasses.html">
+                        <img class="miniicon" src="Images/k6.jpeg" alt="readingglasses">
+                        <div class="widget-title">Power Sunglasses</div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- GLASS TYPE AND PHOTO SECTION END -->
+
+        <!-- MAIN BANNER BAR SECTION START -->
+        <section>
+            <div class="main-banner-bar">
+
+                <div class="main-banner">
+                    <a href="https://www.lenskart.com/eyeglasses/promotions/switch.html">
+                        <img src="Images/w1.gif" alt="switch-magnetic-gif">
+                    </a>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- MAIN BANNER BAR SECTION END -->
+
+
+        <!-- Select your Glasses -->
+
+        <section id="dynamic-list">
+            <div class="dynamic-list">
+                <h1>Select your Glasses </h1>
+            </div>    
+            <div class="SelectBox"> 
+                <label for="cars">Category:</label>
+                <select class="select" id="cat-op" onChange="getRest()">
+                <option>Select a Category</option>
+                </select>
+                <label class="r1" >Product:</label>
+                <select class="restSelect" >
+                    <option>Select a item</option>
+                </select>
+            </div>
+                
+        </section>
+        <script>
+            window.onload = getLens()
+        </script>
+
+        <!-- Select your Glasses -->
+
+
+
+
+
+        <!-- DO MORE BE MORE SECTION START -->
+        <section>
+            <div class="do">
+
+                <a href="https://www.lenskart.com/our-purpose">
+                    <img src="Images/w4.jpeg" alt="purpose">
+                </a>
+
+            </div>
+        </section>
+
+        <!-- DO MORE BE MORE SECTION END -->
+
+        <!-- WEAR THE TREND SECTION START -->
+        <section>
+            <div class="row-2">
+                <center>
+                <!-- -----WEAR----- -->
+                <div class="wear">
+                    
+                    <h2>WEAR THE TREND</h2>
+                    <span>Our hottest collections</span>
+                    
+                </div>
+                </center>
+
+                <!-- -----TREND----- -->
+                <div class="trend">
+
+                    <div class="row-3">
+
+                        <div class="td-31">
+                            <img class="trend-icon" src="Images/q1.jpeg" alt="round">
+                            <div class="trend-title">Round</div>
+                            <a href="https://www.lenskart.com/eyeglasses/frame-shape/round.html">
+                                <div class="explore">Explore</div>
+                            </a>
+                        </div>
+                        <div class="td-32">
+                            <img class="trend-icon" src="Images/q2.jpeg" alt="cateeye">
+                            <div class="trend-title">Cat-Eye</div>
+                            <a href="https://www.lenskart.com/eyeglasses/brands/vincent-chase-eyeglasses/cat-eye.html">
+                                <div class="explore">Explore</div>
+                            </a>
+                        </div>
+                        <div class="td-33">
+                            <img class="trend-icon" src="Images/q3.jpeg" alt="clubmaster">
+                            <div class="trend-title">Clubmaster</div>
+                            <a href="https://www.lenskart.com/eyewear/promotion/frame-shape/clubmasters.html">
+                                <div class="explore">Explore</div>
+                            </a>
+                        </div>
+                        <div class="td-34">
+                            <img class="trend-icon" src="Images/q4.jpeg" alt="transparent">
+                            <div class="trend-title">Transparent</div>
+                            <a href="https://www.lenskart.com/eyeglasses/promotions/vc-transparent.html">
+                                <div class="explore">Explore</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEAR THE TREND SECTION END -->
+
+        <!-- 70% OFF SECTION START -->
+        <section>
+            <div class="off-70">
+                <a href="https://www.lenskart.com/eyeglasses/promotions/eyeglasses-starting-rs-999.html">
+                    <img src="Images/w5.jpeg" alt="desk70%off">
+                </a>
+            </div>
+        </section>
+
+        <!-- 70% OFF SECTION SECTION END -->
+
+        <!-- AQUA COLOR CONTAC-LENSES SECTION START -->
+        <section>
+            <div class="aqua-color">
+
+                <div class="aqua">
+                    <hr>
+                    <h4 >
+                        As Seen on TV: Aquacolor Contact Lenses
+                    </h4>
+                    <hr>
+                </div>
+                <div class="color">
+                    <a
+                        href="https://www.lenskart.com/contact-lenses/top-contact-lenses-brands/aqualens/aqualens-color.html">
+                        <img class="coloricon" src="Images/a1.gif" alt="aqua-color">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- AQUA COLOR CONTAC-LENSES SECTION END -->
+
+        <!-- PERFECT FIT SECTION START -->
+        <section>
+            <div class="row-5">
+
+                <div class="row-6">
+                    <hr>
+                    <h4 >
+                        FIND THE PERFECT FIT
+                    </h4>
+                    <hr>
+                </div>
+
+                <div class="perfect-fit">
+                    <div class="eye-power">
+
+                        <a href="https://www.lenskart.com/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html">
+                            <img class="fit" src="Images/s1.webp" alt="eye-square">
+                        </a>
+
+                        <a href="https://www.lenskart.com/power-sunglasses-main.html">
+                            <img class="fit" src="Images/s2.webp" alt="power-sun-square">
+                        </a>
+
+                    </div>
+                    <div class="blu-sun-digi">
+
+                        <a href="https://www.lenskart.com/eyeglasses/collections/all-computer-glasses.html">
+                            <img class="fit" src="Images/s3.webp" alt="blucg-square">
+                        </a>
+
+                        <a href="https://www.lenskart.com/sunglasses/special/vincent-chase-bestsellers.html">
+                            <img class="fit" src="Images/s4.webp" alt="sun-square">
+                        </a>
+
+                        <a href="https://www.lenskart.com/eyeglasses/brands/hooper.html">
+                            <img class="fit" src="Images/s5.webp" alt="digi-square">
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PERFECT FIT SECTION END -->
+
+        <!-- OJOS WEAR SECTION START -->
+        <section>
+            <div class="row-7">
+
+                <div class="oj">
+                    <hr>
+                    <h4 >
+                        INTRODUCING OJOS Wear - SUBSCRIBE & SAVE
+                    </h4>
+                    <hr>
+                </div>
+                <div class="os">
+                    <a href="https://www.ojoswear.com/?utm_source=LK_desktop">
+                        <img class="ojos-icon" src="Images/s6.webp" alt="ojos-web">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- OJOS WEAR SECTION END -->
+
+        <!-- CONTACT LENSES AND MORE SECTION START -->
+        <section>
+            <div class="row-8">
+
+                <div class="contact">
+                    <hr>
+                    <h4 >
+                        CONTACT LENSES & MORE
+                    </h4>
+                    <hr>
+                </div>
+                <div class="lenses">
+
+                    <div class="icons">
+                        <a
+                            href="https://www.lenskart.com/contact-lenses/contact-lens-type/colour-disposable-contact-lenses.html">
+                            <img class="lens-icon" src="Images/s7.webp" alt="colorcl">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.lenskart.com/contact-lenses/lens-solutions.html">
+                            <img class="lens-icon" src="Images/s8.webp" alt="solutioncl">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- CONTACT LENSES AND MORE SECTION END -->
+
+
+
+        <!-- OUR BRANDS SECTION START -->
+        <section>
+            <div class="OUR-BRANDS">
+                <!-- VINCENT-CHASE START -->
+                <div class="vincent-chase">
+
+                    <div class="row-10">
+                        <hr>
+                        <h4 >
+                            OUR BRANDS
+                        </h4>
+                        <hr>
+                    </div>
+                    <div class="row-11">
+                        <a href="https://www.lenskart.com/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html">
+                            <img class="row-11-icon" src="Images/s9.webp" alt="VC-Banner">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="vc-eg">
+
+                    <div class="row-12">
+                        <div class="eg-head">
+                            EYEGLASSES
+                        </div>
+                        <div class="eg-range">
+                            <a href="https://www.lenskart.com/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html">
+                                View Range
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-13">
+
+                        <div class="td-131">
+                            <a href="https://www.lenskart.com/silver-black-full-rim-rectangle-large-size-56-vincent-chase-online-steel-escobar-vc-e12422-c3-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e1.jpg" alt="eg-1">
+                            </a>
+                        </div>
+                        <div class="td-131">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-e14996-c1-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e2.jpg" alt="eg-2">
+                            </a>
+                        </div>
+                        <div class="td-131">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-e14405-c1-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e3.jpg" alt="eg-3">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row-14">
+                        <div class="td-141">
+                            <a href="https://www.lenskart.com/lenskart-air-la-e11821-full-rim-wayfarer-stainless-steel-c1-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e4.jpg" alt="eg-4">
+                            </a>
+                        </div>
+                        <div class="td-141">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-e10502-c-2-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e5.jpg" alt="eg-5">
+                            </a>
+                        </div>
+                        <div class="td-141">
+                            <a href="https://www.lenskart.com/lenskart-air-lenskart-air-la-e11289-rectangle-tr90-c1-eyeglasses.html"
+                                target="_blank">
+                                <img class="eg-icons" src="Images/e6.jpg" alt="eg-6">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="vc-sg">
+
+                    <div class="row-15">
+                        <div class="sg-head">
+                            SUNGLASSES
+                        </div>
+                        <div class="sg-range">
+                            <a href="https://www.lenskart.com/sunglasses/special/vincent-chase-bestsellers.html">
+                                View Range
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-16">
+
+                        <div class="td-161">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s14524-c3-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g1.jpg" alt="sg-1">
+                            </a>
+                        </div>
+                        <div class="td-161">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s14468-c7-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g2.jpg" alt="sg-2">
+                            </a>
+                        </div>
+                        <div class="td-161">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s14468-c7-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g3.jpg" alt="sg-3">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row-17">
+                        <div class="td-171">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s11164-c7-full-rim-round-stainless-steel-stainless-steel-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g4.jpg" alt="sg-4">
+                            </a>
+                        </div>
+                        <div class="td-171">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s11748-c8-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g5.jpg" alt="sg-5">
+                            </a>
+                        </div>
+                        <div class="td-171">
+                            <a href="https://www.lenskart.com/vincent-chase-vc-s11742-c1-sunglasses.html"
+                                target="_blank">
+                                <img class="sg-icons" src="Images/g6.jpg" alt="sg-6">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+        <!-- OUR BLOG SECTION START -->
+        <section>
+
+            <div class="OUR-BLOG">
+
+                <div class="row-48">
+                    <hr>
+                    <h4 >
+                        OUR BLOG
+                    </h4>
+                    <hr>
+                </div>
+                <div class="row-49">
+                    <a href="https://spectacular-blog.lenskart.com/">
+                        <img class="row-49-icon" src="Images/b5.webp" alt="ourblog">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- OUR BLOG SECTION END -->
+    </main>
+    <footer>
+        <h3 id="footcopy">&copy; LABH K</h3>
+        <hr>
+        <div class="foot">
+            <h3>SERVICES</h3>
+            <p>Store Locator</p>
+            <p>Frame size adjustment</p> 
+        </div>
+        <div class="foot">
+            <h3>About Us</h3>
+            <p>We are hiring</p>
+            <p>Refer & Earn</p>
+        </div>
+        <div class="foot">
+            <h3>HELP</h3>
+            <p>FAQs</p>
+            <p>Site Map</p>
+        </div>
+    </footer>
+
+    <script>
+
+       
+        window.onload=geolocation()
+    
+        let x = document.getElementById('location');
+        let y = document.getElementById('weather');
+        function geolocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                x.innerText = "Geo Not Supported"
+            }
+        }
+
+        function showPosition(data){
+            console.log(data)
+            let latitude = data.coords.latitude;
+            let longitude = data.coords.longitude;
+            const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+      
+            fetch(url,{method:'GET'})
+    
+            .then((res) => res.json())
+    
+            .then((data) => {
+                console.log(data)
+                let cityName = data.city.name
+                let temp = data.list[0].temp.day
+                x.innerText = `${cityName} `.toUpperCase()
+                y.innerText = `${temp} °C`;
+                
+            })
+        }
+    </script>
+</body>
+
+</html>
